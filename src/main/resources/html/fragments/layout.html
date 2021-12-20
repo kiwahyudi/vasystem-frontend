@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title layout:title-pattern="$LAYOUT_TITLE :: $CONTENT_TITLE">Virtual Account System</title>
+  
+  <!-- Head & Css  -->
+    <div th:insert="~{head::head}" ></div>
+    <!-- /Head & Css  -->
+    
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <div th:insert="~{navbar::navbar}" ></div>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <div th:insert="~{menu::menu}" ></div>
+  <!-- /Main Sidebar Container -->
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div th:insert="~{content::main-content}" ></div>
+  <!-- /Content Wrapper. Contains page content -->
+  
+  <!-- Footer  -->
+  <div th:insert="~{footer::footer}" ></div>
+  <!-- /Footer  -->
+  </div>
+<!-- ./wrapper -->
+</body>
+</html>
